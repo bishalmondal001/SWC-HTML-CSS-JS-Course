@@ -1,0 +1,313 @@
+body{
+    background: #FFFFFF;
+    
+
+}
+
+header{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 1px solid #D4DADF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+
+
+
+
+.a {
+    /* Directory */
+
+
+width: 142.28px;
+height: 35px;
+top:auto;
+margin-left: 150px;
+right: auto;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 35px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: 0 1 ;
+order: 1;
+
+display: flex;
+gap: 5px;
+justify-content: end;
+
+
+
+
+}
+
+.a img{
+    display: inline;
+width: 32.42px;
+height: 32.42px;
+left: 0px;
+top: 2.31px;
+
+background: #000000;
+border-radius: 2.567px;
+}
+
+
+.x1 {
+    /* Line 2 */
+
+
+width: 37px;
+height: 0px;
+
+margin-top: 15px;
+margin-left: 90px;
+border: 1px solid #D4DADF;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+
+
+
+
+
+}
+
+
+.x2{
+    /* Line 2 */
+
+
+
+    width: 37px;
+    height: 0px;
+    
+    margin-top: 15px;
+    margin-left: -150px;
+    border: 1px solid #D4DADF;
+    transform: rotate(90deg);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    
+    
+}
+
+.search_icon{  
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 2px;
+    
+}
+
+.b{
+    /* Quick Search */
+
+
+width: 85px;
+height: 35px;
+margin-right: 200px;
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 35px;
+/* identical to box height */
+display: flex;
+justify-content: start;
+
+
+color: #A7AEBA;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.quick_search{
+    display: flex;
+    justify-content: start;
+
+}
+
+
+
+.card {
+    /* Card/Base */
+
+
+/* Auto layout */
+
+position: relative;
+margin-top: 8%;
+margin-left: 40%;
+margin-right: 50%;
+display: flex;
+align-items: center;
+
+padding: 4px;
+
+min-width: 241px;
+min-height: 185px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+
+;
+}
+
+.card_image{
+    /* Avatar */
+
+
+position: absolute;
+left: 33%;
+right: 35%;
+top: 8%;
+bottom: 20%;
+
+/* Male/01 */
+
+background: #FFFFFF;
+}
+
+.card_name {
+    /* Teodoro Luck */
+
+
+width: 86px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+margin-top: 35%;
+margin-left: 41%;
+margin-right: 20%;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.card_position{
+    /* Product Designer at Google */
+
+
+width: 185px;
+height: 19px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+margin-left: 14%;
+margin-top: 5%;
+text-align: center;
+
+/* Gray 1 */
+
+color: #333333;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 5px 5px 5px ;
+    column-gap: 270px ;
+    row-gap: 25px;
+margin-top: 120px;
+margin-left: -110px;
+
+position: relative;
+display: flex;
+flex-wrap: wrap;
+
+
+
+}
+
+@media  screen and (min-width :849px) {
+
+    .grid-container{
+    display: grid;
+    grid-template-columns: 5px 5px 5px ;
+    column-gap: 270px ;
+    row-gap: 25px;
+margin-top: 120px;
+margin-left: -250px;
+max-width : 100%;
+  position : absolute;
+  
+
+
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+}
+
