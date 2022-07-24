@@ -40,16 +40,26 @@ element2.addEventListener('click',function(e){
    
     //storing search item
 
-    const text = element2.querySelector('input');
+    let searchtext;
+    const search_function=()=>{
+        searchtext=document.getElementById("i").value;
+        
+        
+    }
 
 
-    const search_URL = BASE_URL +'/search/movie?'+API_KEY+'&query='+text;
     
+
     //fetching movies from Tmdb website to here for search property
     const search = async () => {
+        const search_URL = BASE_URL +'/search/movie?'+API_KEY+'&query='+searchtext;
+
+        
         c = await fetch(search_URL);
         let data_1 = await c.json();
         let films_1 = data_1['results'];
+       
+        
         return films_1;
     }
     
@@ -70,7 +80,6 @@ element2.addEventListener('click',function(e){
         
                 const img = document.createElement("img");
                 img.src = IMG_URL+films[i].poster_path;
-                console.log(films[i].poster_path);
                 img.alt = "Poster Unavailable";
                 img.classList.add('movie_poster');
                 img.classList.add('object-cover');
@@ -102,7 +111,7 @@ element2.addEventListener('click',function(e){
 
 
 
-element2.addEventListener('click',function(j)
+element3.addEventListener('click',function(j)
 {
     
 
@@ -112,7 +121,8 @@ element2.addEventListener('click',function(j)
     .then(films_1 => {
 
            
-            console.log(text);
+            
+            document.getElementById('body').innerHTML = '';
 
             const list =films_1;
             
@@ -120,7 +130,6 @@ element2.addEventListener('click',function(j)
             {
                 const img = document.createElement("img");
                 img.src = IMG_URL+child.poster_path;
-                console.log(child.poster_path);
                 img.alt = "Poster Unavailable";
                 img.classList.add('movie_poster');
                 img.classList.add('object-cover');
@@ -152,7 +161,6 @@ element2.addEventListener('click',function(j)
     
         
  });
-
    
     
 
